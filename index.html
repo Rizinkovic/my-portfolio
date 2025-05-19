@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/af0db50a6f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="https://github.com/Rizinkovic"><img src="./Images/logo.png" alt="logo" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p id="typingHeading">Full Stack Web Developer</p>
+                <h1>Hey, I'm <span>Rizin</span>kovic<br>from <span style="color: red;">Camer</span>oon</h1>
+            </div>
+
+            <div class="quote">
+            <div class="container">
+                <p>"The <span>quieter</span> you become, the more you're able to hear"</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                 <div class="about-col-1">
+                    <img src="./Images/image1.JPG" height="100%" width="100%">
+                 </div>
+                 <div class="about-col-2">
+                    <h1 class="sub-title">About <span style="color: #ff004f">Me</span></h1>
+                    <p>I am Rizinkovic aka <span style="color: #ff004f">Song Richard</span>, a full-stack web developer and computer geek exercising since 2017. 
+                        My web development adventure started on Wordpress during my high school days 
+                        before later diving into Javascript, PHP and Python later in college. 
+                        I love coding, problem solving and deployment of proefficient projects which provide solutions to needy clients 
+                        as well as create an impact in the technosphere.</p>
+
+                        <div class="tab-titles">
+                            <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                            <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                            <div class="tab-links" onclick="opentab('education')">Education</div>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app development</li>
+                                <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                                <li><span>Web Security</span><br>Penetration Tester</li>
+                            </ul>
+                        </div>
+
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br>Senior Web Developer At <a href="https://songaming.xyz" style="text-decoration: none;color: #b54769;">SONGAMING LLC</a></li>
+                                <li><span>2020 - 2023</span><br>Junior Web Developer At ALLGAMEZ LLC</li>
+                            </ul>
+                        </div>
+
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025</span><br>BSc in Banking & Finance <br>University of Yaounde II</li>
+                                <li><span>2024</span><br>Web Development Bootcamp <br>Online(Udemy)</li>
+                                <li><span>2022</span><br>GCE Advanced Level - Beryla High-school</li>
+                            </ul>
+                        </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating web applications that suits the need of the clients and improve their businesses/services.</p>
+                    <a href="https://github.com/Rizinkovic">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>Creating responsive android/iOS mobile apps that help improve the needs of users.</p>
+                    <a href="https://github.com/Rizinkovic">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-fingerprint"></i>
+                    <h2>Web Apps Security</h2>
+                    <p>Providing strong-rooted security solutions to web applications inorder to render their efficiency and runtime.</p>
+                    <a href="https://github.com/Rizinkovic">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Images/work1.png" height="322px">
+                    <div class="layer">
+                        <h3>Identity Card Generator</h3>
+                        <p>A website that can to generate an ID Card based on the information the user provides.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/work2.png" height="322px" width="587px">
+                    <div class="layer">
+                        <h3>Personal Income Tracker</h3>
+                        <p>A simple web app that permits users to track their incomes.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/work3.png" height="322px" width="587px">
+                    <div class="layer">
+                        <h3>Business Landing Page</h3>
+                        <p>Landing page of a fictional Cybersecurity company which offers security auditing services and courses.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/songrichard13" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span style="color: #ff004f;">Me</span></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>richardlegeek13@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+237682598917</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/richardlegeek"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Rizinkovic"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/Rizinkovic"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/song-richard-9b4876353"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./Images/MyCV.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025. Made with <i class="fa-solid fa-heart"></i> by Rizinkovic</p>
+      </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+
+        const texts = ["I am","A FullStack", "Web Developer."];
+const typingHeading = document.getElementById("typingHeading");
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeWriter() {
+  const currentText = texts[textIndex];
+
+  if (isDeleting) {
+    typingHeading.textContent = currentText.substring(0, charIndex);
+    charIndex--;
+
+    if (charIndex < 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+    }
+  } else {
+    typingHeading.textContent = currentText.substring(0, charIndex);
+    charIndex++;
+
+    if (charIndex > currentText.length) {
+      isDeleting = true;
+      charIndex = currentText.length; 
+      setTimeout(typeWriter, 2000); 
+      return;
+    }
+  }
+
+  setTimeout(typeWriter, isDeleting ? 50 : 100);
+}
+
+
+typeWriter();
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
