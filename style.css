@@ -204,6 +204,60 @@ nav ul li a:hover::after {
     color: red;
 }
 
+/* Tech Stack styling within the layer */
+.tech-stack {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fff;
+    background: rgba(255, 0, 79, 0.3);
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #ff004f;
+}
+
+/* Glassmorphism effect for the layer */
+.layer {
+    background: linear-gradient(rgba(0,0,0,0.1), #ff004fde);
+    backdrop-filter: blur(4px);
+}
+
+/* Smooth transition for extra projects */
+.extra-project {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button consistency */
+#show-more-btn {
+    background: #6f42c1; /* Modern Purple */
+    border: 1px solid #6f42c1;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.4s ease; /* Smooth transition for color and scale */
+}
+
+#show-more-btn:hover {
+    background: #5a32a3;
+    border-color: #5a32a3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(111, 66, 193, 0.4);
+}
+
+/* The "Faded" state when clicked/active */
+#show-more-btn.is-active {
+    background: rgba(111, 66, 193, 0.2); /* Faded purple with transparency */
+    color: #ababab; /* Muted text color */
+    border-color: rgba(111, 66, 193, 0.3);
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
 /* about section */ 
 
 #about {
@@ -494,6 +548,8 @@ form .btn2 {
 nav .fa-solid {
     display: none;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     #header {
